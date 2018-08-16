@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<style>
+    div button {
+        margin: 10px ;
+      }
+    div  {
+        text-align: center;
+    }
+</style>
+<body>
+
+<div><button type="button" class="btn btn-primary" onclick=" vitek.launch() ">Запустить кофеварку</button></div>
+<div><button type="button" class="btn btn-danger" onclick="vitek.clearAlert()">Остановить кофеварку</button></div>
+
+<script>
+    function CoffeeMachine(power) {
+        var waterAmount = 0;
+        var coffeeAmount=0;
+        var maxTemp=90;
+        var waterHeatCapacity = 4200;
+
+
+        // Проверяем воду на наличие и на нужное колличество
+        this.addWater = function (newAmount) {
+            try {
+                if (newAmount <= 0) {
+                    throw new Error();
+                }else{
+                    if (newAmount > 50 ) {
+                        waterAmount = newAmount
+                    }else{
+                        console.error('Мало воды')
+                    }
+
+                }
+            } catch (error) {
+                console.error('Кофкварка пустая, нужно добавить воды')
+            }
+        };
+        // Проверяем кофе на наличие и на нужное колличество
+        this.addCoffee = function (newCoffee) {
+            try {
+                if (newCoffee <= 0) {
+                    throw new Error();
+                }else{
+                    if (newCoffee > waterAmount*0.25 ) {
+                        coffeeAmount = newCoffee
+                    }else{
+                        console.error('Мало кофе')
+                    }
+                }
+            } catch (error) {
+                console.error('Кофкварка пустая, нужно добавить кофе')
+            }
+        };
+
+
+        // Расчитываем время готовки кофе , учитывая необходимое колличество воды и кофе
+        var calcBoilTime = function () {
+            return  ((waterAmount*waterHeatCapacity*maxTemp)/power)/(coffeeAmount*0.03);
+        };
+
+        this.getBoilTime = function()  {
+            return calcBoilTime()
+        };
+        // Запускаем кофеварку
+        this.launch = function () {
+            try {
+                if ((this.getBoilTime() > 0) && (this.getBoilTime() != Infinity ) ) {
+                    console.log('Кофеварка запущена...');
+                    timeoutID =  setTimeout( function () {
+                        console.log ('Кофе готов!')
+                    },  this.getBoilTime());
+                }else {
+                    throw new Error();
+                }
+            } catch (error) {
+                console.error('Хорошая попытка, но нет');
+            }
+        };
+        // Останавливаем кофеварку
+       this.clearAlert = function() {
+           clearTimeout(timeoutID);
+           console.log ('Кофеварка остановлена');
+        }
+    }
+
+    var vitek = new CoffeeMachine(7000);
+    vitek.addWater(60);
+    vitek.addCoffee(20);
+    console.log(vitek.getBoilTime());
+    // vitek.launch();
+</script>
+
+</body>
+
+</html>
