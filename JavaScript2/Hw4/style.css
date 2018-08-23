@@ -1,0 +1,35 @@
+.tabs__content {
+    display: none; /* по умолчанию прячем все блоки */
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid blanchedalmond;
+    background-color: beige;
+}
+.tabs__content.active {
+    display: block; /* по умолчанию показываем нужный блок */
+
+}
+.tabs__caption {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.tabs__caption li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+
+}
+.tabs__caption li:hover {
+    cursor: pointer;
+    background-color: beige;
+}
+.tabs__caption .active{
+    background-color: bisque;
+}
