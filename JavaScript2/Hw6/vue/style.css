@@ -1,0 +1,29 @@
+@import url("//unpkg.com/element-ui@2.4.6/lib/theme-chalk/index.css");
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 300px;
+   text-align: center;
+}
+
+.el-carousel__item:nth-child(n){
+    background-image: url("https://mota.ru/upload/wallpapers/2017/04/27/21/59/52523/149331943959023f0fc86a55.63418331.jpg");
+    background-size: cover;
+
+}
+
+.el-carousel__item:nth-child(2n) {
+    background-image: url("https://zabavnik.club/wp-content/uploads/2018/02/gory_kartinki_1_18113930.jpg");
+    background-size: cover;
+}
+
+/*.el-carousel__item:nth-child(3) {*/
+    /*background-image: url("https://img.fonwall.ru/o/1/peyzaj-goryi-zakat-peyzaji.jpgg");*/
+    /*background-size: cover;*/
+/*}*/
+.slider {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
