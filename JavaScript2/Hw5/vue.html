@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="mt-4" id="cart-container">
+            <div class="card mb-2" v-for="product in cart.cart">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {{product.product}}
+                    </h5>
+                    <p class="card-text">
+                        {{product.price}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <form class="mt-4" id="productForm" @submit.prevent="addProduct">
+            <div class="form-group">
+                <label for="productsList">Products</label>
+                <select class="form-control" id="productsList" v-model="currentProduct">
+                    <option v-for="product in products" :key="product.id" :value="product.id">{{product.name}}</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">
+                Add product
+            </button>
+        </form>
+    </div>
+    <script>
+        const BASE_URL = 'http://89.108.65.123:8080';
+
+        new Vue({
+          el: '#app',
+          data: {
+            cart: {
+              user_id: '',
+              cart: [],
+            },
+            currentProduct: '0',
+            products: [
+              {
+                id: 0,
+                name: 'iPhone 8',
+                price: 60000,
+              },
+              {
+                id: 1,
+                name: 'iPad',
+                price: 32000,
+              },
+              {
+                id: 2,
+                name: 'Macbook Air',
+                price: 70000,
+              },
+              {
+                id: 3,
+                name: 'Macbook Pro',
+                price: 120000,
+              },
+            ],
+          },
+          created() {
+            this.createCart();
+          },
+          methods: {
+            async request(path, method) {
+              try {
+                return await fetch(`${BASE_URL}${path}`, {
+                  method
+                }).then(
+                  (res) => res.json());
+              } catch (e) {
+                console.error(e);
+                return false;
+              }
+            },
+            getProduct() {
+              const productInfo = this.products[this.currentProduct];
+              return {
+                product: productInfo.name,
+                price: productInfo.price,
+              }
+            },
+            async addProduct() {
+              const productData = this.getProduct();
+              await this.request(`/shop?user_id=${this.cart.user_id}&product=${productData.product}&price=${productData.price}`, 'post');
+              this.updateCart();
+            },
+            async updateCart() {
+              this.cart = await this.request(`/shop?user_id=${this.cart.user_id}`);
+            },
+            async createCart() {
+              const userId = localStorage.getItem('userId');
+              if (userId) {
+                this.cart.user_id = userId;
+                this.updateCart();
+              } else {
+                this.cart = await this.request('/shop');
+              }
+            }
+          }
+        })
+    </script>
+</body>
+</html>
