@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для шапки ( Лого, название, картинка)*/
+
+.header {
+    margin: auto;
+    /* border: 2px solid red; */
+    height: 412px;
+    width: 1208px;
+}
+
+.shop_logo {
+    background-color: azure;
+    /*  border: 2px solid red;*/
+    width: 33%;
+    height: 200px;
+    float: left;
+}
+
+.shop_logo img {
+    position: relative;
+    width: 200px;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+
+.shop_name {
+    margin: 2px;
+    width: 808px;
+    /*  border: 2px solid yellow;*/
+    height: 200px;
+    overflow: hidden;
+    background-color: azure;
+    font-family: 'Shrikhand', cursive;
+
+}
+
+.shop_h1 {
+    margin: 0;
+    font-size: 90px;
+}
+
+.shop_menu {
+    border-collapse: collapse;
+    margin-left: 200px;
+    text-align: right;
+}
+
+.menu_td {
+
+    text-align: center;
+    border: 2px solid red;
+    height: 50px;
+    width: 250px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.shop_menu a {
+
+    font-size: 30px;
+    font-family: 'Oswald', cursive;
+}
+
+.menu_td:hover {
+    background-color: aliceblue;
+    border-bottom: 2px solid black;
+}
+
+/* Выпадающее меню */
+
+.shop_menu2 {
+    text-align: right;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.shop_list2 {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.shop_menu2 ul li {
+    margin: 0px -6px 0 0;
+    display: inline-block;
+    background-color: azure;
+}
+
+.shop_menu2 a {
+    display: block;
+    padding: 0 70px;
+    color: black;
+    font-size: 30px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.shop_menu2 a:hover {
+    background-color: lightgrey;
+}
+
+.shop_menu2 ul ul {
+   display: none;
+    position: absolute;
+    top: 100%;
+}
+.shop_list3 {
+    
+    text-align: center;
+    width: 234px;
+    list-style: none;
+    padding: 0 ;
+}
+.shop_list3 > li > a {
+    font-family: 'Oswald', cursive;
+    padding: 0px;
+    text-align: center;
+}
+
+/* отображаем выпадающий список при наведении */
+
+.shop_menu2 ul li:hover > ul {
+    display: block;
+}
+
+/* первый уровень выпадающего списка */
+
+.shop_menu2 ul ul li {
+    
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/* Стили для подвала ( Лого, меню)*/
+
+.footer {
+    position: relative;
+    margin: 0 auto;
+    width: 1210px;
+    height: 170px;
+    /*border: 2px solid red;*/
+}
+
+.footer_logo {
+    background-color: floralwhite;
+    margin: 0;
+    text-align: center;
+    /* border: 2px solid yellow;*/
+    width: 600px;
+    height: 170px;
+    float: left;
+}
+
+.footer_logo img {
+    padding-top: 30px;
+}
+
+.footer_menu {
+    background-color: floralwhite;
+    font-family: 'Oswald', cursive;
+    font-size: 25px;
+    text-align: center;
+    /* border: 2px solid black;*/
+    width: 600px;
+    height: 170px;
+    float: left;
+}
+
+.footer_list li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer_list {
+    margin: 0;
+}
+
+.copy {
+    font-size: 20px;
+    font-family: 'Oswald', cursive;
+}
+
+/* Контейнер  с содержимым индекс*/
+
+.content_index {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* Контейнер  с содержимым*/
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+/* Контейнер на странице контактов*/
+
+.container_fieldset {
+
+    font-size: 30px;
+
+}
+
+.container_form {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    width: 400px;
+    height: 600px;
+
+}
+
+input,
+select,
+textarea {
+    background: floralwhite;
+    font-family: 'Oswald', cursive;
+    text-transform: capitalize;
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+    width: 300px;
+    font-size: 20px
+}
+
+input:hover {
+    background: azure;
+}
+
+input:focus {
+    background: azure;
+}
+
+textarea:hover {
+    background: azure;
+}
+
+textarea:focus {
+    background: azure;
+}
+
+select:hover {
+    background: azure;
+}
+
+
+
+input,
+select,
+textarea:focus {
+    outline: none;
+}
+
+.superbutton {
+    font-family: 'Oswald', cursive;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background: floralwhite;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.superbutton:hover {
+    background: #358DE5;
+}
+
+
+
+/* Убираем стрелочки с поля ввода телефона*/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Вся центральная часть страницы каталога */
+
+.content {
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+
+}
+
+/* Блок по центру*/
+
+.content_catalog {
+    width: 400px;
+    float: left;
+    overflow: hidden;
+}
+
+/*Оформление картинки с рамкой и исчезания при наведении*/
+
+.imgout {
+    outline: 2px solid black;
+}
+
+.imgout:hover {
+    outline: none;
+
+}
+
+
+/* Страница каталог - контент*/
+
+#main {
+    /* border: 2px solid red;*/
+    margin: 0 auto;
+    height: 500px;
+    width: 1070px;
+}
+
+.main_div1 {
+    position: relative;
+    /* border: 2px solid black;*/
+    height: 500px;
+    width: 350px;
+    float: left;
+}
+
+.main_div21 {
+    position: absolute;
+    height: 500px;
+    width: 350px;
+}
+
+.main_img {
+    height: 500px;
+    width: 350px;
+}
+
+.main_div22 {
+    text-align: center;
+    position: absolute;
+    height: 500px;
+    width: 350px;
+    display: none;
+}
+
+.main_h1 {
+    background-color: #bbbbbb;
+    margin: 0;
+    font-family: 'Oswald', cursive;
+    font-size: 50px;
+    border: 30px solid grey;
+    padding-bottom: 147px;
+    padding-top: 147px;
+
+}
+
+.main_div1:hover .main_div22 {
+    display: block;
+}
+
+.main_div1:hover .main_h1 {
+    opacity: 0.8;
+}
+
+
+/*Заголовки*/
+
+.header3,
+.header4 {
+    text-align: center;
+    margin: auto;
+    font-family: 'Oswald', cursive;
+    color: black;
+}
+
+.header3 {
+    font-size: 40px;
+}
+
+.header4 {
+    font-size: 25px;
+}
+
+
+.list > li {
+    list-style-type: none;
+    font-family: 'Pacifico';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Оформлене текста*/
+
+.text {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+    background: floralwhite;
+    text-indent: 20px;
+}
+
+.text2 {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+}
+
+.text:first-letter {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: red;
+}
+
+.text_list {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+    background: floralwhite;
+    text-indent: 20px;
+}
+
+/*Оформление ссылок меню*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:focus {
+    color: brown;
+}
+
+a:hover {
+    color: brown;
+}
+
+.list2 {
+    color: brown;
+}
+
+ul[class="text"] {
+    list-style-image: url(image/gal.png);
+
+}
+
+.img1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    text-decoration: none;
+}
+
+/*Страница адресс*/
+
+.address_conteiner {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.address_map {
+    width: 100%;
+    height: 374px;
+}
+
+.address_info {
+    font-size: 20px;
+    font-family: 'Oswald', cursive;
+    text-align: center;
+}
+
+.address_list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+/*Страница товара*/
+
+.catalog_page {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.catalog_img1 {
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+
+.catalog_description {
+    text-align: center;
+    width: 600px;
+    float: left;
+}
+
+/* Кнопка */
+
+#button_buy {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background: red;
+    color: white;
+    border: black;
+    border-radius: 10px;
+    opacity: .5;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#button_buy:hover {
+    background: #ff6633;
+    color: white;
+    border: #ff6633;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#button_buy:focus {
+    outline: none;
+}
+
+#button_buy:focus {
+    color: black;
+}
+
+.catalog_pagepart1 {
+    width: 1200px;
+    margin: 0 auto;
+    height: 580px;
+}
+
+/*Вторая часть страница католога*/
+
+.catalog_pagepart2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*Доп таблица*/
+
+.table_task {
+    border-collapse: collapse;
+}
+
+.table_ex > td {
+    vertical-align: middle;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.table_ex2 > td {
+    vertical-align: middle;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border: 2px solid black;
+}

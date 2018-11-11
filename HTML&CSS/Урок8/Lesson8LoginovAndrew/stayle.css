@@ -1,0 +1,1363 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+div {
+    /* border: 1px solid red; */
+}
+
+/*Задаем данные сетке сетке в header*/
+
+.col-md-12 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-onepart {
+    height: 285px;
+}
+
+.header-twopart {
+    height: 485px;
+}
+
+/*Оформление фонового изображения*/
+
+.header {
+    padding: 0px;
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    height: 770px;
+    width: 1600px;
+
+}
+
+/*Оформление логотипа*/
+
+.header-logo {
+    margin-left: 230px;
+    margin-top: 40px;
+    float: left;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+/*Меню*/
+
+.header_list {
+    margin-top: 45px;
+    margin-right: 230px;
+    float: right;
+
+}
+
+.header_list > li {
+    position: relative;
+    margin-left: 20px;
+    float: left;
+    list-style-type: none;
+}
+
+.header_list a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    /* Style for "Home" */
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    /* Text style for "H, ome" */
+    letter-spacing: 0.35px;
+    border: 2px solid white;
+    border-color: transparent;
+}
+
+.header_list a:hover {
+    border-bottom: 2px solid #ffffff;
+
+
+}
+
+/*Оформление выпадающего меню*/
+
+.header_listsecond {
+    right: -32px;
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+}
+
+.header_listsecond li {
+    float: none;
+    margin: 0px;
+}
+
+.header_listsecond li a {
+    margin-top: 5px;
+    border: 2px solid white;
+    border-color: transparent;
+
+}
+
+.list22:hover .header_listsecond {
+    display: block;
+}
+
+/*Оформление текста в центре header*/
+
+.header-text {
+    text-align: center;
+    margin-top: 38px;
+    margin-left: 508px;
+    margin-bottom: 0px;
+    width: 590px;
+}
+
+.header-h1 {
+    margin: 0px auto;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+
+}
+
+.header-span {
+    height: 55px;
+    width: 185px;
+}
+
+.header-p {
+    margin: 0px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.header_buy {
+    text-decoration: none;
+    float: left;
+    margin-left: 703px;
+    margin-top: 48px;
+    padding: 20px 36px;
+    background-color: #ffffff;
+    color: #c0301c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition: .2s linear;
+
+}
+
+.header_buy:hover {
+    text-decoration: none;
+    box-shadow: 200px 0 0 0 rgba(0, 0, 0, .2) inset;
+    color: black;
+}
+
+.header_buy:focus {
+    color: #c0301c;
+    text-decoration: none;
+}
+
+
+
+/*Страница services*/
+
+.services {
+    height: 576px;
+    width: 1600px;
+    padding: 0px;
+}
+
+.servicestextone {
+    text-align: center;
+    height: 220px;
+
+}
+
+.services-p1 {
+    margin-left: 750px;
+    margin-top: 98px;
+    float: left;
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #555555;
+    padding-bottom: 27px;
+}
+
+.services-p2 {
+    margin-top: 27px;
+    margin-left: 562px;
+    float: left;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*2 страница три иконки и текст*/
+
+.servicestexttwo {
+    height: 356px;
+}
+
+/*Оформление первого мини меню*/
+
+/*Первая иконка и текст*/
+
+.icon1 {
+    display: block;
+    float: left;
+    width: 350px;
+    text-align: center;
+    margin-top: 68px;
+    margin-left: 237px;
+
+}
+
+.services-icon {
+    margin: auto;
+    color: #c0301c;
+    line-height: 90px;
+    text-align: center;
+    font-size: 76px;
+
+    width: 93px;
+    height: 93px;
+    border: 2px solid #dddddd;
+    border-radius: 50px;
+    background-color: white;
+    transition: .6s;
+}
+
+
+.services-icon:hover {
+    background-color: #c0301c;
+    color: white;
+    cursor: default;
+}
+
+.services-icon1 {
+    margin: 28px 0px auto;
+
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.services-icon2 {
+
+    margin: 28px 0px auto;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*Вторая иконка и текст*/
+
+.icon2 {
+    float: left;
+    width: 350px;
+    text-align: center;
+    margin-top: 68px;
+    margin-left: 45px;
+}
+
+.topicon {
+    font-size: 60px;
+}
+
+/*Третья иконка и текст*/
+
+.icon3 {
+    float: left;
+    width: 350px;
+    text-align: center;
+    margin-top: 68px;
+    margin-left: 45px;
+}
+
+/*Страница  about us*/
+
+.aboutus {
+    height: 855px;
+    width: 1600px;
+    padding: 0px;
+}
+
+.aboutus-header {
+    text-align: center;
+    height: 409px;
+}
+
+.aboutus-p1 {
+    margin-left: 750px;
+    margin-top: 101px;
+    float: left;
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #555555;
+    padding-bottom: 27px;
+}
+
+.aboutus-p2 {
+    margin-top: 27px;
+    margin-left: 569px;
+    float: left;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.aboutus-p3 {
+    text-align: justify;
+    width: 553px;
+    margin-top: 70px;
+    margin-left: 229px;
+    float: left;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.aboutus-p4 {
+    text-align: justify;
+    width: 553px;
+    margin-top: 70px;
+    margin-left: 32px;
+    float: left;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*Раздел с фотографиями сотрудников*/
+
+.aboutus-main {
+    height: 292px;
+}
+
+.aboutus-foto {
+    position: relative;
+    float: left;
+    width: 266px;
+    height: 253px
+}
+
+.aboutus-img {
+    position: absolute;
+}
+
+.aboutus-fon {
+    position: absolute;
+    display: none;
+}
+
+.aboutus-foto:hover .aboutus-fon {
+    display: block;
+}
+
+.aboutus-google {
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 190px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.facebook {
+    margin-left: 110px;
+    width: 20px;
+    height: 20px;
+    background: white;
+
+}
+
+.linkedin {
+    width: 20px;
+    height: 20px;
+    background: white;
+    margin-left: 145px;
+
+}
+
+.twitter {
+    width: 20px;
+    height: 20px;
+    background: white;
+    margin-left: 180px;
+}
+
+.aboutus-foto {
+    margin-left: 228px;
+    margin-top: 34px;
+}
+
+/* Вторая фотография  */
+
+.foto2 {
+    margin-left: 23px;
+}
+
+/* Третья фотография  */
+
+.foto3 {
+    margin-left: 23px;
+}
+
+/* Четвертая фотография  */
+
+.foto4 {
+    margin-left: 23px;
+}
+
+/*Оформление должности и ФИО*/
+
+.name_footer {
+    display: block;
+    float: left;
+    margin-left: 228px;
+    margin-top: 10px;
+    width: 262px;
+
+}
+
+.name_footer p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.name2 {
+    margin-left: 28px;
+}
+
+.name3 {
+    margin-left: 28px;
+}
+
+.name4 {
+    margin-left: 28px;
+}
+
+
+/*Страница с работами*/
+
+/*Заголовок и меню*/
+
+.container-works {
+    width: 1600px;
+    padding: 0px;
+}
+
+.col-works {
+    text-align: center;
+}
+
+.header-works {
+    color: #555555;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid #555555;
+    padding-bottom: 27px;
+    display: inline-block;
+    margin-top: 98px;
+}
+
+.text-works {
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 27px;
+    margin-left: 592px;
+
+}
+
+.text-works li {
+
+    padding-right: 25px;
+    float: left;
+    list-style: none;
+}
+
+.text-works a {
+    color: #555555;
+    text-decoration: none;
+}
+
+.text-works a:hover {
+    color: #c0301c;
+}
+
+/*Первая работа*/
+
+.works-foto {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 320px;
+    margin-top: 68px;
+    margin-left: 228px;
+
+
+}
+
+.works-img {
+    position: absolute;
+}
+
+.works-fon {
+
+    position: absolute;
+    display: none;
+}
+
+.works-foto:hover .works-fon {
+    display: block;
+}
+
+.works-fototext {
+
+
+    position: absolute;
+
+}
+
+.fototext1 {
+    margin-left: 127px;
+    margin-top: -200px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.fototext2 {
+    margin-left: 156px;
+    margin-top: -171px;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.fototext3 {
+    color: black;
+    background-color: #ffffff;
+    width: 103px;
+    height: 41px;
+    margin-left: 130px;
+    margin-top: -107px;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "V, iew" */
+    letter-spacing: 1.4px;
+    transition: .2s linear;
+    line-height: 42px;
+}
+
+.fototext3:hover {
+    color: #c0301c;
+
+    box-shadow: 200px 0 0 0 rgba(0, 0, 0, .2) inset;
+}
+
+/*Вторая работа*/
+
+.fototwo {
+    margin-left: 27px;
+}
+
+/*3работа*/
+
+.fotothree {
+    margin-left: 27px;
+}
+
+/*4работа*/
+
+.fotofour {
+    margin-top: 28px;
+    margin-left: 228px;
+}
+
+/*5работа*/
+
+.fotofive {
+    margin-top: 28px;
+    margin-left: 27px;
+}
+
+/*6работа*/
+
+.fotosix {
+    margin-top: 28px;
+    margin-left: 27px;
+}
+
+/*7работа*/
+
+.fotoseven {
+    margin-top: 28px;
+    margin-left: 228px;
+}
+
+/*8работа*/
+
+.fotoeight {
+    margin-top: 28px;
+    margin-left: 27px;
+}
+
+/*9работа*/
+
+.fotonine {
+    margin-top: 28px;
+    margin-left: 27px;
+}
+
+/*Страница с банером*/
+
+.container-banner {
+    padding: 0px;
+    width: 1600px;
+}
+
+.row-banner {
+    margin: 0px auto;
+}
+
+.img-banner {
+    margin-top: 61px;
+    float: left;
+}
+
+.col-banner p {
+    margin-left: 573px;
+    color: #ffffff;
+    margin-top: -303px;
+    text-align: center;
+    float: left;
+    font-family: "Roboto Slab";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.a-banner {
+    padding-top: 4px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 700px;
+    margin-top: -150px;
+    float: left;
+    text-decoration: none;
+    width: 183px;
+    height: 53px;
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.a-banner:focus {
+    color: white;
+    text-decoration: none;
+     !important;
+}
+
+.a-banner:active {
+    text-decoration: none;
+
+}
+
+.a-banner:checked {
+    text-decoration: none;
+     !important;
+}
+
+.a-banner:hover {
+    color: #c0301c;
+    background-color: aliceblue;
+    text-decoration: none;
+     !important;
+
+}
+
+/*Блог*/
+
+.container-blog {
+    width: 1600px;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.row-blog {
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog-p {
+    margin-left: 730px;
+}
+
+.img-blog {
+    float: left;
+    width: 463px;
+    height: 325px;
+    margin-top: 68px;
+    margin-left: 229px;
+}
+
+.blog-span {
+    width: 640px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 68px;
+}
+
+.blog-span1 {
+    color: #c0301c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.blog-span2 {
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.blog-span3 {
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.blog-span4 {
+    color: #c0301c;
+    font-family: "Roboto Slab";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.blog-span a {
+    color: #555555;
+}
+
+.blog-span a:focus {
+    color: #555555;
+    text-decoration: none;
+
+}
+
+.blog-span a:hover {
+    text-decoration: none;
+    color: #c0301c;
+}
+
+.col-md-blog {
+    border-bottom: 1px solid black;
+}
+
+/* Блог под попап */
+
+.cotainerpopup {
+    width: 200px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 660px
+}
+
+/*Попап 1*/
+
+.popup-checkbox,
+.popup {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.popup:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+}
+
+.popup-content {
+    width: 800px;
+    height: 650px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.popup-shower {
+    font-family: "Roboto Slab";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "R, ead mor" */
+    letter-spacing: 1.3px;
+    color: #555555;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.popup-shower:hover {
+    color: #c0301c;
+    text-decoration: none;
+}
+
+.popup-closer {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #999;
+    font-size: 20px;
+    border: 1px solid #999;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup-closer:hover {
+    background-color: #eee;
+}
+
+.popup-checkbox:checked + .popup {
+    opacity: 1;
+    display: block;
+}
+/*Попап 2*/
+.popup-checkbox2,
+.popup2 {
+    display: none;
+}
+
+.popup2 {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.popup2:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+}
+
+.popup-content2 {
+    width: 800px;
+    height: 650px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.popup-shower2 {
+    font-family: "Roboto Slab";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "R, ead mor" */
+    letter-spacing: 1.3px;
+    color: #555555;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.popup-shower2:hover {
+    color: #c0301c;
+    text-decoration: none;
+}
+
+.popup-closer2 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #999;
+    font-size: 20px;
+    border: 1px solid #999;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup-closer2:hover {
+    background-color: #eee;
+}
+
+.popup-checkbox2:checked + .popup2 {
+    opacity: 1;
+    display: block;
+}
+
+/*Оформление попапатекса*/
+
+.popup-content img {
+    margin-top: 30px;
+    height: 220px;
+}
+.popup-content2 img {
+    margin-top: 30px;
+    height: 220px;
+}
+
+.pophed {
+    text-align: center;
+    color: #c0301c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.poptext {
+    text-align: justify;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/* Контактная информация форма */
+
+.container-contact {
+    width: 1600px;
+    margin: 0px auto;
+    padding: 0px;
+
+}
+
+.container-contact a {
+    color: #555555;
+    text-decoration: none;
+}
+
+.container-contact a:hover {
+    text-decoration: none
+}
+
+.container-contact a:focus {
+    text-decoration: none;
+}
+
+.row-contact {
+    margin: 0px;
+    padding: 0px;
+}
+
+.p-contact {
+    margin-left: 700px;
+}
+
+.p2-contact {
+    margin-left: 550px;
+}
+
+.p3-contact {
+    width: 203px;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    float: left;
+    margin-top: 75px;
+    margin-left: 75px;
+}
+
+.span-contact {
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+/*Форма*/
+
+.input-contact {
+    margin-right: 27px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    width: 352px;
+    height: 46px;
+}
+
+.textarea-contact {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 732px;
+    height: 106px;
+
+}
+
+.input-send {
+    width: 180px;
+    height: 50px;
+    background-color: #fff;
+
+}
+
+.contact-form {
+    margin-top: 68px;
+    margin-left: 162px;
+    float: left;
+
+}
+
+/*Подвал*/
+.logo_footer {
+    
+    float: left;
+   margin-left: 350px;
+    margin-top: 60px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.footer_list {
+    margin-top: 30px;
+    
+    float: right;
+
+}
+.logo_footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer_list > li {
+    position: relative;
+    margin-left: 20px;
+    float: left;
+    list-style-type: none;
+}
+
+.footer_list a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    /* Style for "Home" */
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    /* Text style for "H, ome" */
+    letter-spacing: 0.35px;
+    border: 2px solid white;
+    border-color: transparent;
+}
+
+.footer_list a:hover {
+    border-bottom: 2px solid #ffffff;
+
+
+}
+
+/* Вторая часть*/
+.container-footer {
+    background-color: #721422;
+    width: 1600px;
+    height: 310px;
+    padding: 0px;
+}
+
+.row-footer {
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    height: 310px;
+    margin: 0px;
+}
+
+.row-footer img {
+
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 50px;
+}
+
+/*Страница с работами*/
+.container_works {
+    width: 1600px;
+    padding: 0px;
+}
+
+.container_works .col-md-6 {
+    margin: 0px;
+    padding: 0px;
+    width: 790px;
+}
+.container_works .row {
+    padding: 0px;
+    margin: 0px;
+}
+/*Шапка*/
+
+
+/*Слайдер*/
+.wrap {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    
+    margin-left: 100px;
+    
+	height: 600px;
+	width: 600px;
+	position: relative;
+	overflow: hidden;
+	
+	text-align: center;
+	background: #120103;
+}
+
+header {
+	background: #721422;
+	box-shadow: 0 .5em 1em #111;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	width: 100%;
+}
+
+header label {
+    font-family: "Roboto Slab";
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 4.25em;
+	font-size: 1em;
+	
+	padding: 0 1em;
+}
+
+header label:hover {
+	background: #681c23;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 10;
+	padding: 8em 1em 0;
+	background-color: #120103;
+	background-position: 50% 50%;
+	background-size: cover;
+	transition: left 0s .75s;
+}
+
+.slide-one {
+    padding: 0px;
+	background-image: url(img/works1.jpg);
+}
+
+.slide-two {
+    padding: 0px;
+	background-image: url(img/works2.jpg);
+}
+.slide-three {
+    padding: 0px;
+	background-image: url(img/works5.jpg);
+}
+.slide-four {
+    padding: 0px;
+	background-image: url(img/works4.jpg);
+}
+
+.slide h1 {
+    margin-top:100px;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: transform .5s .5s, opacity .5s;
+}
+
+[id^='slide']:checked + .slide {
+	left: 0;
+	z-index: 100;
+	transition: left .65s ease-out;
+}
+
+[id^='slide']:checked + .slide h1 {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all .5s .5s;
+}
+
+/*Текст рядом с слайдером*/
+
+.h2_works{
+    
+    text-align: center;
+    color: #c93c20;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.p_works {
+    text-align: justify;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+/* Оформление хедера*/
+.header_works {
+    height: 150px;
+}

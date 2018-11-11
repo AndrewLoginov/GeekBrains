@@ -1,0 +1,547 @@
+/*Надстройки*/
+.container-fluid {
+/*    border: 1px solid red;*/
+    margin: 0px;
+    padding: 0px;
+}
+.row {
+/*    border: 1px solid blue;*/
+
+}
+div {
+/*    border: 1px solid yellow;*/
+    
+
+}
+/*Начало контейнера с услугами*/
+.row_service{
+    text-align: center;
+    padding: 80px 0px 80px 0px;
+    
+}
+.row_service .col-lg-auto {
+    padding: 0px;
+}
+.row_service a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 17px 0px 17px;
+}
+.row_service svg {
+    margin-bottom: 29px;
+}
+.row_service h3{
+    margin-bottom: 19px;
+    color: #555555;
+font-family: 'Myralewaysemibold';
+font-size: 22px;
+
+}
+.row_service p{
+    max-width: 256px;
+    margin-bottom: 30px;
+  color: #8c8c8c;
+font-family: 'Mymontserrat';
+font-size: 14px;
+
+line-height: 24px;
+}
+.row_service a:hover h3 {
+    color: #c7b299;
+}
+.row_service a:hover svg use {
+    fill:#c7b299;
+}
+
+
+/*Начало контейнера с примерами работ*/
+/*Заголов описание*/
+.row_work_text{
+    padding-top: 81px;
+}
+.div_work_text  {
+    text-align: center;
+    max-width:757px;
+    padding: 0px;
+    
+    
+}
+.div_work_text h2 {
+    margin-bottom: 24px;
+    color: #555555;
+    font-family:'Myralewaysemibold';
+    font-size: 30px;
+}
+
+.div_work_text p {
+    margin-bottom: 24px;
+    color: #8c8c8c;
+    font-family: 'Mymontserrat';
+    font-size: 16px;
+    line-height: 28px;
+}
+/*Меню*/
+.div_work_list{
+
+}
+.div_work_list ul {
+   
+    margin: 0px 0px 25px 0px;
+    padding:0px;
+    list-style: none;
+    text-align: center;
+}
+.div_work_list ul li {
+       padding: 0px 5px;
+    display: inline-block; 
+}
+.div_work_list ul li a {
+   display: inline-block;
+    padding: 10px 24px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    text-decoration: none;
+    color: #8c8c8c;
+    font-family:'Mymontserrat';
+    font-size: 14px;
+    line-height: 21px;
+    transition: all .9s ease;
+    
+}
+.div_work_list ul li a:hover {
+    background-color: #998675;
+    color: #ffffff;
+}
+/*Работы*/
+.row_work_page  {
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 auto;    
+    padding-top: 15px;
+
+}
+.row_work_page div {
+    padding: 0px;
+    margin: 0px;
+}
+
+.row_work_a {
+    margin: 0px 15px 30px 15px;
+    display: inline-block;
+   background-color: #fbfaf8;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+.row_work_page h3 {
+    margin: 30px 0px 14px 28px;
+    text-align: left;
+    color: #c7b299;
+    font-family: 'Myraleway';
+    font-size: 20px;
+}
+.row_work_page p {
+    text-align: left;
+    margin: 0px 0px 27px 28px;
+    color: #d1d1d1;
+    font-family: 'Mymontserrat';
+    font-size: 14px;
+    line-height: 20px;
+} 
+
+.row_work_a:hover {
+    background-color: #362f2d;
+text-decoration: none;
+}
+.row_work_a:hover h3 {
+    color: #ffffff;
+}
+.row_work_a:hover p {
+    color: #c7b299;
+}
+.row_work_a:hover img {
+    opacity: .5;
+}
+/*Оформелние ссылки и лупы в работах*/
+
+
+/*Кнопка в конце страницы работы*/
+.row_work_bitton {
+    padding: 40px 0px 80px 0px;
+    text-align: center;
+}
+.row_work_bitton a {
+    display: inline-block;
+    padding: 20px 44px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    color: #ffffff;
+    font-family: 'Myralewaysemibold';
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+.row_work_bitton a:hover {
+    background-color: #362f2d;
+}
+/*Конец контейнера с примерами работ*/
+/*Контейнер рука с телефоном, текс, статистика */
+.container_statistics {
+    margin: 0 auto;
+    max-width: 1920px;
+    
+}
+.container_statistics .row{
+    
+    margin: 0px;
+    
+/*    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);*/
+}
+.container_statistics .row div{
+    
+    margin: 0px;
+}
+.row_phone {
+    padding-top: 79px;
+}
+.row_phone .col-lg-5{
+    text-align: right;
+}
+.div_statistics_text {
+    padding-top:116px;
+}
+.div_statistics_text h2 {
+    margin-bottom: 40px;
+    color: #555555;
+    font-family: 'Myralewaysemibold';
+    font-size: 30px;
+
+}
+.div_statistics_text p {
+    max-width: 657px;
+    color: #8c8c8c;
+    font-family: 'Mymontserrat';
+    font-size: 16px;
+
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+.div_statistics_text ul {
+    list-style-image: url(../img/statistics/01.png);
+    color: #8c8c8c;
+font-family:'Mymontserrat';
+font-size: 16px;
+
+line-height: 32px;
+    margin: 0px 0px 0px 50px;
+}
+.div_statistics_text ul li {
+    padding-left:20px;
+}
+/*Строка с статистикой*/
+.row_statistics {
+    text-align: center;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    padding-top: 69px;
+}
+.div_statistics{
+    padding: 0px 35px; 
+}
+.svg_statistics {
+    margin-bottom: 30px;
+}
+.number_statistics {
+    color: #ffffff;
+    font-family: 'Mymontserratextralight';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom:21px; 
+}
+.text_statistics {
+    color: #c7b299;
+    font-family: 'Mymontserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.svg_statistics_line {
+    margin-bottom: 60px;
+}
+/*Контейнер с постами*/
+.container_post{
+    text-align: center;
+    padding-top: 82px;
+}
+.div_post h2 {
+    margin: 0px 0px 30px 0px;
+    color: #555555;
+    font-family: 'Myralewaysemibold';
+    font-size: 30px;
+}
+.div_post p {
+    max-width: 757px;
+    margin-bottom: 40px;
+    color: #8c8c8c;
+font-family: 'Mymontserrat';
+font-size: 16px;
+
+line-height: 28px;
+}
+/*Посты */
+.slide_post {
+    text-align: left;
+    padding: 0px;
+    max-width: 370px;
+    border: 1px solid #f8f8f8;
+   background-color: #fbfaf8;
+    margin: 0px 15px 0px 15px;
+   
+    
+}
+.slide_post img {
+    margin-bottom: 30px;
+   
+}
+.slide_post h3 {
+    margin:0px 0px 19px 29px;
+    color: #555555;
+    font-family: 'Myraleway';
+    font-size: 20px;
+
+}
+.post_text {
+    color: #8c8c8c;
+    font-family: 'Mymontserrat';
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0px 0px 27px 29px;
+}
+.slide_post a {
+    text-decoration: none;
+    color: #c7b299;
+font-family: 'Mymontserrat';
+font-size: 14px;
+
+line-height: 20px;
+    margin: 0px 0px 33px 29px;
+}
+.slide_post:hover {
+    background-color: #362f2d;
+}
+.slide_post:hover h3 {
+    color: #c7b299;
+}
+.slide_post:hover .post_text {
+    color: #ffffff;
+}
+.slide_post:hover img {
+    opacity: .5;
+}
+/*Пост число*/
+.data_post {
+    display: inline-block;
+    border-radius: 3px 3px 0 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+   
+}
+.post_day {
+    background-color: #363636;
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+    padding: 9px 10px;
+    color: #ffffff;
+    font-family: 'Mymontserrat';
+    font-size: 24px;
+    line-height: 20px;
+    
+}
+.post_mou {
+    text-align: center;
+    margin: 0px;
+    padding: 0px; 
+    background-color: #252525;
+    color: #ffffff;
+    font-family: 'Myroboto';
+    font-size: 12px;
+    line-height: 20px;
+}
+.slide_post:hover .post_day{
+    background-color: #c7b299;
+}
+.slide_post:hover .post_mou{
+    background-color: #a48d72;
+}
+/*Строка с стрелками*/
+.row_post_arrow{
+    padding: 40px 0px 80px -0px;
+} 
+.row_post_arrow a{
+    margin: 0px 2px 0px 2px;
+}
+.link_arrow:hover svg use {
+    fill:#c7b299;
+}
+/*Контейнер с картинками логотипами*/
+.row_lodo {
+    margin: 0 auto;
+    max-width: 1920px;
+    background-image: url(../img/examplelogo/back.jpg);
+    padding: 140px 0px;
+}
+.div_logo {
+    margin: 0px 45px;
+}
+/*Контейнер с инфо*/
+.row-info {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 80px 0px;
+    background-color: #191919;
+}
+.info_link_logo{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Myraleway';
+    font-size: 34px;
+    letter-spacing: -1.36px;
+    margin-bottom: 29px;
+    
+}
+.div_info_one{
+    margin: 0px 21px;
+}
+.info_link_logo:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+.info_text_one {
+    text-align: left;
+    max-width: 258px;
+    margin-bottom: 33px;
+    color: #555555;
+    font-family: 'Mymontserrat';
+    font-size: 14px;
+    line-height: 24px;
+}
+.info_link_one {
+    text-align: left;
+    text-decoration: none;
+    color: #d1d1d1;
+    font-family: 'Mymontserrat';
+    font-size: 14px;
+    font-weight: 400;
+
+    
+}
+.info_link_one:hover{
+    text-decoration: none;
+    color: #d1d1d1;
+}
+/*Второй столбец*/
+.div_info_one {
+    padding: 0px;
+    max-width: 270px;
+}
+.div_info_one h3{
+    display: inline-block;
+   color: #ffffff;
+    font-family: 'Myraleway';
+    font-size: 24px;
+    margin-top:28px;
+    margin-bottom: 33px;
+ 
+}
+.info_text_date {
+    margin: 0px 0px 10px 0px;
+    color: #363636;
+    font-family:'Mymontserrat';
+    font-size: 12px;
+    text-decoration: none;
+}
+.info_text_state{
+    max-width: 250px;
+    margin: 0px;
+    color: #363636;
+    font-family: 'Mymontserrat';
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+.div_info_one a:hover{
+    text-decoration: none;
+}
+.div_info_one a:hover .info_text_state {
+    color: #ffffff;
+    text-decoration: none;
+}
+.div_info_one a:hover .info_text_date{
+    text-decoration: none;
+   color: #c7b299;
+font-family: 'Mymontserrat';
+font-size: 12px;
+
+}
+.info_svg {
+    margin: 21px 0px 19px 0px;
+}
+.div_info_one a:hover .info_text_state span {
+    color: #00bff3;                  
+}
+.div_info_foto a {
+    margin-bottom: 5px;
+    display: inline-block;
+    
+}
+/*Footer*/
+.container_footer {
+    padding: 45px 0px 52px 0px;
+    background-color: #111111;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.row_footer {
+    max-width:1170px;
+    margin: 0 auto;
+    
+}
+
+.div_footer_part1 ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: #555555;
+    font-family: 'Mymontserrat';
+    font-size: 13px;
+    line-height: 20px;  
+    
+}
+.div_footer_part1 ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+.div_footer_part1 ul li a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #555555;
+     
+}
+.div_footer_part1 ul li a span {
+    color: #959595;
+}
+.div_footer_part1 ul li a:hover {
+   color: #c7b299; 
+}
+.div_footer_part1 ul li a span:hover {
+    color: #c7b299; 
+}

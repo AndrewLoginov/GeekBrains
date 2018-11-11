@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="mt-4" id="cart-container">
+
+        </div>
+        <form class="mt-4" id="productForm">
+            <div class="form-group">
+                <label for="productsList">Products</label>
+                <select class="form-control" id="productsList">
+                    <option value="0">iPhone 8</option>
+                    <option value="1">iPad</option>
+                    <option value="2">Macbook Air</option>
+                    <option value="3">Macbook Pro</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">
+                Add product
+            </button>
+        </form>
+    </div>
+
+    <script>
+        class Http {
+          constructor(baseUrl) {
+            this.baseUrl = baseUrl;
+          }
+          async request(path = '', method = 'get') {
+            try {
+              return await fetch(`${this.baseUrl}${path}`, {
+                method
+              }).then(
+                (res) => res.json());
+            } catch (e) {
+              console.error(e);
+              return false;
+            }
+          }
+        }
+
+        class Product {
+          constructor(productName, productPrice) {
+            this.name = productName;
+            this.price = Number(productPrice);
+          }
+          getProductData() {
+            return {
+              product: this.name,
+              price: this.price,
+            }
+          }
+        }
+
+        class Cart {
+          constructor(baseUrl, container) {
+            this.http = new Http(baseUrl);
+            this.container = container;
+            this.createCart();
+
+          }
+          async render() {
+            this.container.innerHTML = '';
+            const cartData = await this.getCart();
+            cartData.forEach(product => {
+              this.container.innerHTML += `<div class="card mb-2"><div class="card-body">${product.product}<h5 class="card-title"></h5><p class="card-text">${product.price}</p></div></div>`;
+            })
+          }
+          async createCart() {
+            const userId = localStorage.getItem('userId');
+            if (userId) {
+              this.cart = await this.http.request(`/shop?user_id=${userId}`);
+            } else {
+              this.cart = await this.http.request(`/shop`);
+            }
+            this.userId = this.cart.user_id;
+            this.render();
+          }
+          async getCart() {
+            const cart = await this.http.request(`/shop?user_id=${this.userId}`);
+            return cart.cart;
+          }
+          async addProduct(productData) {
+            const product = await this.http.request(`/shop?user_id=${this.userId}&product=${productData.product}&price=${productData.price}`, 'post');
+            this.render();
+          }
+        }
+
+        window.onload = () => {
+            const products = [
+              {
+                id: 0,
+                name: 'iPhone 8',
+                price: 60000,
+              },
+              {
+                id: 1,
+                name: 'iPad',
+                price: 32000,
+              },
+              {
+                id: 2,
+                name: 'Macbook Air',
+                price: 70000,
+              },
+              {
+                id: 3,
+                name: 'Macbook Pro',
+                price: 120000,
+              },
+            ];
+            const productsList = document.querySelector('#productsList');
+            const productForm = document.querySelector('#productForm');
+
+            const cart = new Cart('http://89.108.65.123:8080', document.querySelector('#cart-container'));
+
+            productForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const productInfo = products[productsList.value];
+                const product = new Product(productInfo.name, productInfo.price);
+                cart.addProduct(product.getProductData());
+            });
+        }
+    </script>
+</body>
+</html>

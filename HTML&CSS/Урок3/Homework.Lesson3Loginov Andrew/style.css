@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
+/*Шапка*/
+
+.menu,
+.menu2 {
+    text-align: center;
+    margin: auto;
+    font-family: 'Shrikhand', cursive;
+}
+
+.menu {
+    font-size: 60px;
+    background: url(image/menu.jpg), no-repeat;
+    background-size: cover;
+    color: floralwhite;
+}
+
+.menu2 {
+    font-size: 20px;
+    background: floralwhite;
+    color: brown;
+}
+
+/*Заголовки*/
+
+.header3,
+.header4 {
+    text-align: center;
+    margin: auto;
+    font-family: 'Yanone+Kaffeesatz', cursive;
+    color: brown;
+}
+
+.header3 {
+    font-size: 30px;
+}
+
+.header4 {
+    font-size: 20px;
+}
+
+
+.list > li,
+a {
+    list-style-type: none;
+    font-family: 'Pacifico';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Оформлене текста*/
+.text {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+    background: floralwhite;
+}
+
+.text2 {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+}
+
+/*Оформление ссылок меню*/
+a {
+    color: black;
+}
+
+a:focus {
+    color: brown;
+}
+
+a:hover {
+    color: brown;
+}
+
+.list2 {
+    color: brown;
+}
+
+ul[class="text"] {
+    list-style-image: url(image/gal.png);
+
+}
+
+.img1 {
+    text-align: center;
+
+}
+
+table[class="text"] {
+    margin: 0 auto;
+}
+
+/*Страница контактных данных*/
+
+input[type="submit"],
+input[type="reset"] {
+    color: black;
+}
+
+input,
+select,
+textarea {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: coral;
+}

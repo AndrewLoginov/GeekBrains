@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family: 'Mymontserrat';
+    src: url('montserrat-regular.eot');
+    src: url('montserrat-regular.eot?#iefix') format('embedded-opentype'),
+         url('montserrat-regular.woff2') format('woff2'),
+         url('montserrat-regular.woff') format('woff'),
+         url('montserrat-regular.ttf') format('truetype'),
+         url('montserrat-regular.svg#montserratregular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Myraleway';
+    src: url('raleway-regular.eot');
+    src: url('raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('raleway-regular.woff2') format('woff2'),
+         url('raleway-regular.woff') format('woff'),
+         url('raleway-regular.ttf') format('truetype'),
+         url('raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Myralewayextrabold';
+    src: url('raleway-extrabold.eot');
+    src: url('raleway-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('raleway-extrabold.woff2') format('woff2'),
+         url('raleway-extrabold.woff') format('woff'),
+         url('raleway-extrabold.ttf') format('truetype'),
+         url('raleway-extrabold.svg#ralewayextrabold') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Myralewaysemibold';
+    src: url('raleway-semibold.eot');
+    src: url('raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('raleway-semibold.woff2') format('woff2'),
+         url('raleway-semibold.woff') format('woff'),
+         url('raleway-semibold.ttf') format('truetype'),
+         url('raleway-semibold.svg#ralewaysemibold') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}

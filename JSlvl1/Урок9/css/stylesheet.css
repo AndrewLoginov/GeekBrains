@@ -1,0 +1,143 @@
+body {
+    background: #efefef;
+}
+
+section {
+    width: 500px;
+    margin: 60px auto;
+    background: none;
+}
+
+.active {
+    color: gold;
+}
+
+.categories,
+.films {
+    border: 1px #dddddd solid;
+    margin: 15px 0px;
+    background: white;
+}
+
+.category {
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.category:hover {
+    background: rgba(221, 221, 230, 0.5);
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.film {
+    margin: 20px 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-bottom: 1px dotted #333;
+}
+
+.film-name {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.film-name:hover {
+    margin-bottom: 7px;
+    border-bottom: 3px double rgba(221, 221, 230, 0.5);
+}
+
+.comment {
+    color: #333333;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-author {
+    font-weight: 700;
+}
+
+.film button {
+    width: 200px;
+    padding: 6px;
+    font-size: 12px;
+    color: #333333;
+    margin: 20px auto 10px;
+    border-radius: 6px;
+    background: white;
+}
+
+.comment-form {
+    width: 400px;
+    margin: 20px auto 10px;
+    padding: 10px;
+    border-radius: 6px;
+    color: #333333;
+    border: 1px solid #ccc;
+}
+
+.comment-form > .form-body > input {
+    margin: 10px 5px 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    color: #333;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+
+input.form-comment {
+    width: 200px;
+}
+
+.chosen {
+    padding: 7px;
+    border: 4px dotted #eec;
+}
+
+.comment-form button {
+    margin-top: 5px;
+}
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating > input {
+    display: none;
+}
+
+.rating > label:before {
+    display: inline-block;
+    margin: 5px;
+    font-family: Font Awesome\ 5 Free;
+    content: '\f005';
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    background: url(../svg/star-solid.svg) no-repeat scroll;
+    color: #FFD700;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+    color: #FFED85;
+}

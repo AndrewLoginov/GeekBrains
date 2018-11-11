@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <script src="index.js"></script>
+    <script>
+    window.onload = function () {
+        var munuItem1=new MenuItem('/', 'Главная');
+        var munuItem2=new MenuItem('/', 'Каталог');
+        var munuItem3=new MenuItem('/', 'Блог');
+        var menu = new Menu('menu', 'menu', [munuItem1,munuItem2,munuItem3]);
+        document.write(menu.render());
+    }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

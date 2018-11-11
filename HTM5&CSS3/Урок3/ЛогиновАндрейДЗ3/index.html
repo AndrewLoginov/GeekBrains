@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stayle.css">
+</head>
+
+<body>
+    <!--Первая страница -->
+    <div class="container ">
+        <div class="row header_row">
+            <div class="col-md-12">
+                <!--Хедер -->
+                <header>
+                    <!--Фон видео -->
+                    <video class="header_video" autoplay="autoplay" muted loop preload="auto" poster="video/video.jpg">
+                 <source src="video/video.webm" type="video/webm" >
+                  <source src="video/video.mp4" type="video/mp4" >
+                  <source src="video/video.ogv" type="video/ogg" > 
+              </video>
+                    <!--Меню -->
+                    <nav>
+                        <ul class="header_menu">
+                            <li><a id="home" href="#home">Home</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#port">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!--Логотип -->
+                    <figure>
+                        <img class="header_logo" src="img/logo.png" alt="logotype">
+                    </figure>
+                    <!--Название -->
+                    <h1 class="header_name"><span class="header_namebold">JWOOD</span>PHOTOGRAPHY</h1>
+                    <a class="header_scroll" href="#about">scroll down to see more <br>&dArr;</a>
+                </header>
+            </div>
+        </div>
+    </div>
+    <!--Вторая страница -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <ul class="header_menu about_menu" id="about">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#port">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <article>
+
+                    <figure><img class="about_img" src="img/jason-wood.jpg" alt="wood"></figure>
+                    <h2 class="about_name">About Me</h2>
+                    <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p class="about_text">Jason Wood</p>
+
+                </article>
+                <a class="about_scroll" href="#port">keep scrolling, there is still more to come<br>&dArr; </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- Третья страница -->
+    <div class="container portfolio_container">
+        <div class="row">
+            <div class="col-md-12">
+                    <nav>
+                        <ul class="header_menu" id="port">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#port">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <article>
+                        <h2 class="portfolio_header" >Portfolio</h2>
+                        <div class="lead_div">
+                            <div><img src="img/03.jpg" alt="img"></div>
+                            <div><iframe width="279" height="250" src="https://www.youtube.com/embed/EKxdB_BfqhI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                            <div><img src="img/06.jpg" alt="img"></div>
+                            <div><iframe width="279" height="250" src="https://www.youtube.com/embed/ULFZ9kL1aNg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                            <div><img src="img/01.jpg" alt="img"></div>
+                            <div><video class="portfolio_video" autoplay="autoplay" muted loop preload="auto" poster="video/portfolio3/Sail-Away.jpg">
+                 <source src="video/portfolio3/Sail-Away.webm" type="video/webm" >
+                  <source src="video/portfolio3/Sail-Away.mp4" type="video/mp4" >
+                  <source src="video/portfolio3/Sail-Away.ogv" type="video/ogg" > 
+              </video></div>
+                            <div><img src="img/10.jpg" alt=""></div>
+                            <div><video class="portfolio_video" autoplay="autoplay" muted loop preload="auto" poster="video/portfolio2/Slide-Show.jpg">
+                 <source src="video/portfolio2/Slide-Show.webm" type="video/webm" >
+                  <source src="video/portfolio2/Slide-Show.mp4" type="video/mp4" >
+                  <source src="video/portfolio2/Slide-Show.ogv" type="video/ogg" > 
+              </video></div>
+                            <div><img src="img/04.jpg" alt="img"></div>
+                            <div><video class="portfolio_video" autoplay="autoplay" muted loop preload="auto" poster="video/portfolio/Jungle_Road.jpg">
+                 <source src="video/portfolio/Jungle_Road.webm" type="video/webm" >
+                  <source src="video/portfolio/Jungle_Road.mp4" type="video/mp4" >
+                  <source src="video/portfolio/Jungle_Road.ogv" type="video/ogg" > 
+              </video></div>
+                        </div>
+                    </article>
+                    <a class="about_scroll portfolio_scroll" href="#contact">keep scrolling, there is still more to come<br>&dArr; </a>
+            </div>
+        </div>
+    </div>
+<!-- Четвертая страница, форма-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav>
+                    <ul class="header_menu about_menu" id="contact">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#port">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <h2 class="contact_name">Contact</h2>
+                <form action="file.php" method="post" class="form_contact">
+                    <fieldset>
+                        <legend>say hello
+
+                           <lable for="name" > Your name</lable>
+                            <input type="text" placeholder="Andrew" id="name" required name="user-name">
+                            <lable for="phone" > Your phone</lable>
+                            <input type="tel" placeholder="+7-905-800-80-00" id="phone" required name="user-phone" >
+                            <lable for="email" > Your e-mail</lable>
+                            <input type="email" placeholder="wood@mail.ru" id="email" required name="user-email">
+                            <lable for="date" > date</lable>
+                            <input type="date" placeholder="Andrew" id="date" required name="user-date">
+                            <input type="submit" value="send">
+                        </legend>
+                    </fieldset>
+                </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <footer>
+                <nav>
+                   <ul class="header_menu about_menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#port">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul> 
+                </nav>
+                
+                    <p class="footer_text">MAIL:</p>
+                <adress><a class="footer_a" href="#">Jason@wood.com</a></adress>
+                    <p class="footer_text">phone:</p>
+                <adress><a class="footer_a"  href="#">+44 212 432 444</a></adress>
+                    <p class="footer_text">social media:</p>
+                <adress> <a href="#"><img class="footer_img" src="img/facebook.jpg" alt="img"></a> <a href="#"><img class="footer_img" src="img/instagram.jpg" alt="img"></a> <a href="#"><img class="footer_img" src="img/twitter.jpg" alt="img"></a></adress>
+                    <p class="copy_footer">© all rights reserved</p>
+               
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,547 @@
+/*Header*/
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+}
+
+.header_container {
+    /*    border: 1px solid red;*/
+    width: 1920px;
+    min-height: 984px;
+    padding-top: 40px;
+}
+
+
+/*----------------------------*/
+
+.top_container {
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Лого и название */
+
+.nav_waxon {
+    color: #ffffff;
+    font-family: 'Myraleway';
+    font-size: 34px;
+    letter-spacing: -1.36px;
+    text-decoration: none;
+    margin-right: 200px;
+}
+
+/*Меню поиск и тд*/
+
+.header_list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header_list li {
+    display: inline-block;
+}
+
+.header_list a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Mymontserrat';
+    font-size: 14px;
+}
+
+.header_list a:hover {
+    color: #c7b299;
+}
+
+.header_icon {
+    fill: #fff;
+}
+
+.buy_icon {
+    margin-left: 48px;
+    margin-right: 28px;
+}
+
+.icon_svg:hover use {
+    fill: #c7b299;
+}
+
+
+/*Заголовки*/
+
+.header_hgroup {
+    margin-top: 285px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.hgroup_name2 {
+    margin: 0px 0px 14px 0px;
+    color: #ffffff;
+    font-family: 'Myraleway';
+    font-size: 36px;
+
+}
+
+.hgroup_name {
+    margin: 0px 0px 19px 0px;
+    color: #ffffff;
+    font-family: 'Myralewayextrabold';
+    font-size: 52px;
+}
+
+.header_hgroup p {
+    margin: 0px 0px 52px 0px;
+    width: 562px;
+    color: #ffffff;
+    font-family: 'Mymontserrat';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.linkstart {
+    padding: 21px 38px;
+    color: #ffffff;
+    font-family: 'Myralewayextrabold';
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background-color: #998675;
+    text-decoration: none;
+    transition: box-shadow .9s ease;
+}
+
+.linkstart:hover {
+    box-shadow: 200px 0 0 0 #615348 inset;
+}
+
+/*Слой слайдера */
+
+.header_backgroung {
+    width: 1920px;
+    min-height: 1024px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    background-image: url(../IMG/background.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.icon_leftright use {
+    fill: #fff;
+}
+
+.icon_leftright:hover use {
+    fill: #d3c1ad;
+}
+
+.header_backgroung form {
+    align-self: flex-end;
+    margin-bottom: 42px;
+}
+
+.left_slide {
+    position: absolute;
+    align-self: flex-start;
+    top: 475px;
+    left: 150px;
+}
+
+.right_slide {
+    position: absolute;
+    align-self: flex-end;
+    top: 475px;
+    right: 150px;
+
+}
+
+.sliad_form input {
+    margin: 280px 5px 0px 5px;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+
+}
+
+.sliad_form input:hover {
+    cursor: pointer;
+}
+
+/*Контейнер с возможностями*/
+
+.plus_container {
+    /*    border: 1px solid red;*/
+    width: 1160px;
+    min-height: 373px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.plus_container article {
+    width: 266px;
+    height: 180px;
+    text-align: center;
+}
+
+.plus_link {
+    text-align: center;
+    width: 266px;
+    height: 180px;
+    text-decoration: none;
+
+}
+
+.plus_name {
+    color: #555555;
+    font-family: 'Myralewaysemibold';
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.plus_text {
+    color: #8c8c8c;
+    font-family: 'Mymontserrat';
+    font-size: 14px;
+}
+
+.plus_link:hover .plus_name {
+    color: #c7b299;
+}
+
+.plus_link:hover svg use {
+    fill: #c7b299;
+}
+
+/* Страница browser ideas*/
+
+.browser_ideas {
+    position: relative;
+    /*    border: 1px solid red;*/
+    width: 1920px;
+    background-color: #fbfaf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+
+}
+
+.browser_ideas img {
+    width: 770px;
+    height: 482px;
+}
+
+.browser_img {
+    z-index: 1;
+}
+
+.browser_img2 {
+    position: absolute;
+    top: 300px;
+    left: 346px;
+
+}
+
+.browser_img3 {
+    position: absolute;
+    top: 300px;
+    right: 346px;
+
+}
+
+.browser_ideas header {
+    text-align: center;
+}
+
+.browser_ideas h2 {
+    margin: 83px 0px 0px 0px;
+    color: #555555;
+    font-size: 30px;
+    font-family: 'Myralewaysemibold';
+}
+
+.browser_ideas_text {
+    width: 757px;
+    margin: 24px 0px 40px 0px;
+    text-align: center;
+    height: 43px;
+    color: #8c8c8c;
+    font-family: 'Mymontserrat';
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.purchase_ideas {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    /*    border: 1px solid red;*/
+    width: 1920px;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+
+}
+
+.purchase_ideas h2 {
+    color: #ffffff;
+    font-family: 'Myraleway';
+    font-size: 28px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.purchase_ideas h2 span {
+    color: #c7b299;
+}
+
+.purchase_ideas p {
+    color: #615855;
+    font-family: 'Mymontserrat';
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.purchase_ideas a {
+    margin: 50px 0px;
+    min-width: 114px;
+    height: 23px;
+    color: #ffffff;
+    font-family: 'Myralewayextrabold';
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: #998675;
+    padding: 19px 28px;
+    transition: background-color .9s ease;
+}
+
+.purchase_ideas a:hover {
+    background-color: #615348;
+}
+
+.text_ideas {
+    margin-left: 376px;
+    margin-right: 470px;
+}
+
+/*Страница с работами и примерами*/
+
+/*----------------------------*/
+
+.project {
+/*    border: 1px solid red;*/
+    width: 1920px;
+
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.project_head {
+    color: #555555;
+    font-family: 'Myralewaysemibold';
+    font-size: 30px;
+    margin: 83px 0px 0px 0px;
+}
+
+.project_text {
+    color: #8c8c8c;
+    font-family: 'Mymontserrat';
+    font-size: 16px;
+    width: 757px;
+    text-align: center;
+    line-height: 28px;
+    margin: 24px 0px 40px 0px;
+}
+
+.project_list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+.project_list li {
+    display: inline-block;
+}
+
+.project_list li a {
+    text-decoration: none;
+    color: #8c8c8c;
+    font-family: 'Mymontserrat';
+    font-size: 14px;
+    line-height: 21px;
+    padding: 9px 21px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    transition: all .9s ease;
+
+
+}
+
+.project_list li a:hover {
+    color: #ffffff;
+    background-color: #998675;
+}
+
+.project_link {
+    color: #ffffff;
+    font-family: 'Myralewayextrabold';
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding: 20px 44px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    text-decoration: none;
+    transition: box-shadow .9s ease;
+    margin: 40px 0px 80px 0px;
+}
+
+.project_link:hover {
+    box-shadow: 200px 0 0 0 #615348 inset;
+}
+
+/*Работы*/
+
+.example_project {
+    width: 1170px;
+    height: 704px;
+/*    border: 1px solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example_progectsome {
+    position: relative;
+    text-decoration: none;
+    height: 337px;
+    width: 370px;
+/*    border: 1px solid blue;*/
+    margin: 9px;
+}
+
+.progectsome_link {
+    position: relative;
+    height: 100%;
+    background-color: #fbfaf8;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+/*    border: 1px solid yellow;*/
+    transition: all .8s ease;
+
+}
+
+.progectsome_link img {
+    height: 237px;
+
+}
+
+.progectsome_text,
+.progectsome_texttwo {
+
+    text-align: left;
+    display: block;
+    margin-left: 28px;
+
+}
+
+.progectsome_text {
+    margin-top: 20px;
+    margin-bottom: 14px;
+    color: #c7b299;
+    font-family: 'Myraleway';
+    font-size: 20px;
+
+
+}
+
+.progectsome_texttwo {
+    color: #d1d1d1;
+    font-family: 'Mymontserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+
+.progectsome_link:hover {
+    background-color: #362f2d;
+}
+
+.progectsome_link:hover .progectsome_text {
+    color: #ffffff;
+}
+
+.progectsome_link:hover .progectsome_texttwo {
+    color: #c7b299;
+}
+
+.progectsome_link img {
+    transition: all .8s ease;
+
+}
+/*Сылка и лупа*/
+.progectsome_link:hover img {
+    opacity: .3;
+
+}
+.project_link_svg {
+    position: absolute;
+    top:106px;
+    left: 144px;
+}
+.project_lupa_svg {
+    position: absolute;
+    top:106px;
+    right: 146px;
+}
+.project_link_svg:hover use {
+    fill:#c7b299;
+}
+.project_lupa_svg:hover use {
+    fill:#c7b299;
+}
+.project_link_svg:hover .progectsome_link{
+    background-color: #362f2d;
+}

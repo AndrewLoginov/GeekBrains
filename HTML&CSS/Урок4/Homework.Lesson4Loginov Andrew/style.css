@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для шапки ( Лого, название, картинка)*/
+
+.table_header {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.shop_logo {
+    width: 20%;
+    text-align: center;
+}
+
+.shop_name {
+    padding-left: 20%;
+    font-size: 25px;
+    font-family: 'Shrikhand', cursive;
+
+}
+
+.shop_nameh1 {
+    margin: 0;
+}
+
+.menu_img {
+    width: 100%;
+}
+
+.shop_menu {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.menu_td {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    text-align: center;
+}
+
+.menu_td:hover {
+    background-color: aliceblue;
+}
+
+.menu_td > a {
+    font-family: 'Oswald', cursive;
+    margin: 0;
+    font-size: 30px;
+}
+
+/* Стили для подвала ( Лого, меню)*/
+
+.footer {
+    background-color: aliceblue
+}
+
+hr {
+    margin: 0;
+}
+
+.table_footer {
+    width: 100%;
+}
+
+.table_logo {
+    width: 50%;
+    text-align: center;
+}
+
+.table_menu {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.table_menu > ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.list_menu > li > a, {
+    font-family: 'Oswald', cursive;
+    margin: 0;
+}
+
+
+.menu {
+    font-size: 60px;
+    background: url(image/menu.jpg), no-repeat;
+    background-size: cover;
+    color: floralwhite;
+}
+
+.menu2 {
+    font-size: 20px;
+    background: floralwhite;
+    color: brown;
+}
+
+/*Оформление картинки с рамкой и исчезания при наведении*/
+
+.imgout {
+    outline: 2px solid black;
+}
+
+.imgout:hover {
+    outline: none;
+
+}
+
+/* Блок по центру*/
+
+#main {
+    text-align: center;
+}
+
+#main > span {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.main_img {
+    max-height: 500px
+}
+
+/*Заголовки*/
+
+.header3,
+.header4 {
+    text-align: center;
+    margin: auto;
+    font-family: 'Oswald', cursive;
+    color: black;
+}
+
+.header3 {
+    font-size: 40px;
+}
+
+.header4 {
+    font-size: 25px;
+}
+
+
+.list > li {
+    list-style-type: none;
+    font-family: 'Pacifico';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Оформлене текста*/
+
+.text {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+    background: floralwhite;
+    text-indent: 20px;
+}
+  
+.text2 {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+}
+
+.text:first-letter {
+    font-size: 40px; 
+    color: red;
+}
+.text_list {
+   font-size: 20px;
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+    background: floralwhite;
+    text-indent: 20px; 
+}
+/*Оформление ссылок меню*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:focus {
+    color: brown;
+}
+
+a:hover {
+    color: brown;
+}
+
+.list2 {
+    color: brown;
+}
+
+ul[class="text"] {
+    list-style-image: url(image/gal.png);
+
+}
+
+.img1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    text-decoration: none;
+}
+
+table[class="text"] {
+    margin: 0 auto;
+}
+
+/*Страница контактных данных*/
+
+input[type="submit"],
+input[type="reset"] {
+    color: black;
+}
+
+input,
+select,
+textarea {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: coral;
+}
+input,textarea{
+    text-transform:capitalize;
+}
+
+/*Доп таблица*/
+table {
+    border-collapse: collapse;
+}
+.table_ex>td {
+    vertical-align: middle;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+}
+.table_ex2>td {
+    vertical-align: middle;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border: 2px solid black;
+}
